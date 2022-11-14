@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,8 +17,14 @@
  
  .estiloOpciones li {
      display: inline;
+     align-items: right;
+
  }
- 
+
+ ,.estiloOpciones, #botonSseion {
+    display: grid;
+    align-items: right;
+ }
  #botonSesion {
      width: 250px !important;
      border-radius: 15px 15px;
@@ -40,7 +46,7 @@
 
 .Slider {
     width: 100%;
-    margin: 3% 0 0; 
+    margin: 2% 0 0; 
 }
 
 .general {
@@ -61,23 +67,31 @@
     grid-template-rows: 310px 310px 310px;
     margin: 3% 0;
     gap: 20px 20px;
-    background: #ffffff;
-    color: black;
 }
 
+.VariasSeries button{
+    background: #ffffff;
+    text-emphasis-color: black;
+    text-align: left;
+
+}
 .CuadroPeque {
     display: flex;
     flex-direction: column;
+    text-align: right;
+    margin: 3% 0;
 }
 
 .Opciones {
     display: grid;
-    grid-template-columns: 400px;
+    grid-template-columns: 600px;
     grid-template-rows: 0 70px 0;
 }
 
-#principal, #uno, #dos, #tres {
+.Opciones button,
+#principal, #uno, #dos, #tres{
     width: 400px !important;
+    text-align: left;
 }
 
 .final{
@@ -85,6 +99,7 @@
     background-image: url(https://img5.goodfon.com/wallpaper/nbig/6/2f/mstiteli-voina-beskonechnosti-avengers-infinity-war-komiks-1.jpg);
     background-repeat: no-repeat;
     background-position: auto;
+    background-attachment: fixed;
     align-items: center;
     padding: 250px 0;
 }
